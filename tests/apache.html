@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css">
+    <title>apache test</title>
+    <style>
+    p {
+        text-align: left;
+        margin: 2em;
+        padding: 1em;
+    }
+    p strong {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+<p>This demo loads a local Apache instance scoped to the directory that you supply. Press the start button to open an instance, it will alert you with the URL. <strong>Be sure and click the Stop button, I can't figure out how to make a destructor work so the apache instance will not be terminated when you close the tab/window.</strong></p>
+<p>
+<button id="start">Start Apache</button> - <button id="stop" disabled>Stop Apache</button>
+</p>
+<script type="text/javascript" charset="utf-8" src="http://yui.yahooapis.com/combo?2.6.0/build/yahoo-dom-event/yahoo-dom-event.js&2.6.0/build/dragdrop/dragdrop-min.js&2.6.0/build/container/container-min.js&2.6.0/build/element/element-beta-min.js&2.6.0/build/resize/resize-min.js"></script>
+<script src="http://bp.yahooapis.com/2.1.11/browserplus.js"></script>
+<script type="text/javascript" src="../src/js/bp-apache.js"></script>
+</body>
+</html>
